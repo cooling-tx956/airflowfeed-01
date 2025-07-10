@@ -4,76 +4,734 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AC Installation in Brownsville, TX</title>
-  <meta name="description" content="Get expert AC installation in Brownsville, TX. Reliable service, prompt scheduling, and local professionals.">
+  <title>Same-Day AC Repair in Brownsville, TX</title>
+  <meta name="description" content="Need fast AC repair in Brownsville? Our technicians offer same-day service, expert diagnostics, and affordable cooling system fixes.">
+  <link rel="canonical" href="https://cooling-tx956.github.io/airflowfeed-01/">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: 3rem auto;
-      padding: 0 1.5rem;
-      background-color: #f9f9f9;
-      color: #222;
-      line-height: 1.7;
-    }
-    h1 {
-      color: #2a2a2a;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    h2 {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
       color: #333;
-      font-size: 1.4rem;
-      margin-top: 2rem;
+      overflow-x: hidden;
     }
-    ul {
-      margin: 0.5rem 0 1.5rem 1.2rem;
-      padding-left: 1rem;
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
     }
-    a {
-      color: #0066cc;
-      text-decoration: none;
+
+    /* Header */
+    header {
+      background: #334155;
+      color: white;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
       font-weight: 500;
+      color: #e5e7eb;
+      margin: 0;
     }
-    a:hover {
-      text-decoration: underline;
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(rgba(51, 65, 85, 0.95), rgba(51, 65, 85, 0.95)), 
+                  linear-gradient(45deg, #334155, #B91C1C);
+      color: white;
+      padding: 120px 0 80px;
+      text-align: center;
+      position: relative;
     }
-    p {
-      margin-bottom: 1.2rem;
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
-    article {
-      background-color: #fff;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+
+    .hero .subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      opacity: 0.95;
+    }
+
+    .hero .description {
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero-image-inline {
+      margin: 40px auto;
+      max-width: 500px;
+    }
+
+    .hero-image-inline img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    }
+
+    .cta-buttons {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      border: none;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: #B91C1C;
+      color: #FFFFFF;
+      box-shadow: 0 4px 15px rgba(185, 28, 28, 0.4);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      background: #991B1B;
+      box-shadow: 0 6px 20px rgba(185, 28, 28, 0.6);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
+
+    .btn-secondary:hover {
+      background: white;
+      color: #334155;
+    }
+
+    /* Trust Indicators */
+    .trust-section {
+      background: white;
+      padding: 40px 0;
+      border-bottom: 1px solid #e5e7eb;
+    }
+
+    .trust-indicators {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 30px;
+      text-align: center;
+    }
+
+    .trust-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .trust-item i {
+      font-size: 2.5rem;
+      color: #334155;
+    }
+
+    .trust-item h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: #334155;
+    }
+
+    .trust-item p {
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+
+    /* Content Section */
+    .content-section {
+      padding: 80px 0;
+      background: white;
+    }
+
+    .content-section:nth-child(even) {
+      background: #f8fafc;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .section-title h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #334155;
+      margin-bottom: 15px;
+    }
+
+    .section-title p {
+      font-size: 1.1rem;
+      color: #6b7280;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .content-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+
+    .content-card {
+      background: white;
+      padding: 40px 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      text-align: left;
+      transition: all 0.3s ease;
+    }
+
+    .content-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+
+    .content-card h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .content-card i {
+      color: #B91C1C;
+      font-size: 1.5rem;
+    }
+
+    .content-card p {
+      color: #6b7280;
+      margin-bottom: 15px;
+    }
+
+    .content-card ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .content-card li {
+      color: #6b7280;
+      margin-bottom: 8px;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .content-card li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #B91C1C;
+      font-weight: bold;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      margin-top: 60px;
+    }
+
+    .feature-item {
+      text-align: center;
+    }
+
+    .feature-icon {
+      width: 80px;
+      height: 80px;
+      background: #334155;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .feature-icon i {
+      font-size: 2rem;
+      color: white;
+    }
+
+    .feature-item h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #334155;
+      margin-bottom: 15px;
+    }
+
+    .feature-item p {
+      color: #6b7280;
+    }
+
+    /* Emergency Section */
+    .emergency {
+      background: #B91C1C;
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+    }
+
+    .emergency h2 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .emergency p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .emergency-phone {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: white;
+      display: inline-flex;
+      align-items: center;
+      gap: 15px;
+      padding: 20px 40px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+    }
+
+    .emergency-phone:hover {
+      background: #334155;
+      transform: scale(1.05);
+      border-color: white;
+    }
+
+    /* Footer */
+    footer {
+      background: #334155;
+      color: white;
+      padding: 60px 0 30px;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+    }
+
+    .footer-section h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #FFFFFF;
+      margin-bottom: 20px;
+    }
+
+    .footer-section p, .footer-section li {
+      color: #d1d5db;
+      margin-bottom: 10px;
+    }
+
+    .footer-section ul {
+      list-style: none;
+    }
+
+    .footer-section a {
+      color: #d1d5db;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-section a:hover {
+      color: #fbbf24;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid #475569;
+      margin-top: 40px;
+      padding-top: 20px;
+      text-align: center;
+      color: #9ca3af;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .hero .subtitle {
+        font-size: 1.2rem;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .emergency-phone {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+      }
+
+      .content-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
-  <article class="cloud-page">
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <h1>Professional AC Repair</h1>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <h1>AC Installation in Brownsville, TX</h1>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <!-- H1 -->
+      <h1>Same-Day AC Repair in Brownsville, TX</h1>
+      <p class="subtitle">Fast, Reliable AC Repair Service</p>
+      <p class="description">
+        When your air conditioning breaks down, you need fast, reliable repair service. Our expert technicians provide same-day AC repair with professional diagnostics and affordable solutions to get your cooling system running again.
+      </p>
+      <div class="hero-image-inline">
+        <img src="https://raw.githubusercontent.com/cooling-tx956/airflowfeed-01/refs/heads/main/same-day-ac-repair-brownsville-tx.avif" 
+             alt="Same-day AC repair service in Brownsville, TX - Expert technician fixing air conditioning system" 
+             loading="lazy">
+      </div>
+      <div class="cta-buttons">
+        <a href="https://cooling-tx956.github.io/airflowfeed-01/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-wrench"></i>
+          Get AC Repair Now
+        </a>
+        <a href="#services" class="btn btn-secondary">
+          <i class="fas fa-arrow-down"></i>
+          View Services
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <h2>Your Local Solution for Reliable Comfort</h2>
-    <p>Professional AC installation services tailored for homes and businesses in Brownsville. Our team delivers dependable climate control with efficiency and attention to detail.</p>
+  <!-- Trust Indicators -->
+  <section class="trust-section">
+    <div class="container">
+      <div class="trust-indicators">
+        <div class="trust-item">
+          <i class="fas fa-clock"></i>
+          <h3>Same-Day Service</h3>
+          <p>Fast emergency repairs</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-user-graduate"></i>
+          <h3>Expert Technicians</h3>
+          <p>Certified professionals</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-dollar-sign"></i>
+          <h3>Affordable Pricing</h3>
+          <p>Upfront, honest costs</p>
+        </div>
+        <div class="trust-item">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Guaranteed Work</h3>
+          <p>Quality repair warranty</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <p>To learn more about availability or to get started, <a href="https://jfr956.github.io/texas-lone-star-ac/" target="_blank" rel="noopener noreferrer">view this service</a>.</p>
+  <!-- AC Repair Services -->
+  <section class="content-section" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Emergency AC Repair Services</h2>
+        <p>Professional air conditioning repair services to restore your comfort quickly and efficiently</p>
+      </div>
+      <div class="content-grid">
+        <div class="content-card">
+          <h3><i class="fas fa-search"></i> Expert Diagnostics</h3>
+          <p>Comprehensive system diagnosis to identify the root cause of your AC problems quickly and accurately.</p>
+          <ul>
+            <li>Complete system inspection</li>
+            <li>Refrigerant level testing</li>
+            <li>Electrical component check</li>
+            <li>Airflow analysis</li>
+            <li>Thermostat evaluation</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <h3><i class="fas fa-wrench"></i> Same-Day Repairs</h3>
+          <p>Fast, professional repair service to get your AC system running again the same day you call.</p>
+          <ul>
+            <li>Compressor repair/replacement</li>
+            <li>Condenser coil cleaning</li>
+            <li>Refrigerant leak repair</li>
+            <li>Electrical component repair</li>
+            <li>Blower motor service</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <h3><i class="fas fa-exclamation-triangle"></i> Emergency Service</h3>
+          <p>24/7 emergency AC repair service for urgent cooling system failures and breakdowns.</p>
+          <ul>
+            <li>After-hours emergency calls</li>
+            <li>Weekend repair service</li>
+            <li>Holiday emergency support</li>
+            <li>Priority scheduling</li>
+            <li>Rapid response time</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </article>
+  <!-- Common AC Problems -->
+  <section class="content-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Common AC Problems We Fix</h2>
+        <p>Our experienced technicians can diagnose and repair all types of air conditioning issues</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-snowflake"></i>
+          </div>
+          <h3>AC Not Cooling</h3>
+          <p>System running but not producing cold air? We'll diagnose refrigerant issues, compressor problems, or airflow restrictions.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-power-off"></i>
+          </div>
+          <h3>Won't Turn On</h3>
+          <p>AC system completely dead? We'll check electrical connections, circuit breakers, and control components.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-volume-up"></i>
+          </div>
+          <h3>Strange Noises</h3>
+          <p>Unusual sounds from your AC? We'll identify and fix grinding, squealing, or rattling noises quickly.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-tint"></i>
+          </div>
+          <h3>Water Leaks</h3>
+          <p>Water pooling around your AC unit? We'll clear drain lines and fix condensate drainage issues.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "AC Installation in Brownsville, TX",
-    "description": "Get expert AC installation in Brownsville, TX. Reliable service, prompt scheduling, and local professionals.",
-    "url": "https://jfr956.github.io/texas-lone-star-ac/",
-    "@id": "https://jfr956.github.io/texas-lone-star-ac/",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://jfr956.github.io/texas-lone-star-ac/"
-    }
-  }
-  </script>
+  <!-- Why Choose Our Repair Service -->
+  <section class="content-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose Our AC Repair Service</h2>
+        <p>Experience the difference with Brownsville's most trusted AC repair professionals</p>
+      </div>
+      <div class="content-grid">
+        <div class="content-card">
+          <h3><i class="fas fa-clock"></i> Fast Response</h3>
+          <p>We understand AC emergencies can't wait. Our technicians provide same-day service to restore your comfort quickly.</p>
+          <ul>
+            <li>Same-day repair appointments</li>
+            <li>Emergency service available</li>
+            <li>Prompt arrival times</li>
+            <li>Efficient repair process</li>
+            <li>Quick system restoration</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <h3><i class="fas fa-tools"></i> Expert Technicians</h3>
+          <p>Our certified HVAC technicians have years of experience diagnosing and repairing all AC system types.</p>
+          <ul>
+            <li>Licensed and certified</li>
+            <li>Extensive training and experience</li>
+            <li>Advanced diagnostic tools</li>
+            <li>All brands and models</li>
+            <li>Professional service approach</li>
+          </ul>
+        </div>
+        <div class="content-card">
+          <h3><i class="fas fa-dollar-sign"></i> Affordable Pricing</h3>
+          <p>Transparent, upfront pricing with no hidden fees. Quality AC repair service at fair, competitive rates.</p>
+          <ul>
+            <li>Free repair estimates</li>
+            <li>Upfront pricing</li>
+            <li>No hidden charges</li>
+            <li>Competitive rates</li>
+            <li>Financing options available</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Repair Process -->
+  <section class="content-section">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our AC Repair Process</h2>
+        <p>Professional, systematic approach to diagnosing and fixing your air conditioning problems</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>1. Emergency Call</h3>
+          <p>Contact us for immediate AC repair service. We'll schedule same-day service and provide initial troubleshooting guidance.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <h3>2. System Diagnosis</h3>
+          <p>Comprehensive inspection and testing to identify the exact cause of your AC system malfunction.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h3>3. Repair Quote</h3>
+          <p>Clear explanation of the problem and upfront pricing for all necessary repairs before any work begins.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">
+            <i class="fas fa-wrench"></i>
+          </div>
+          <h3>4. Professional Repair</h3>
+          <p>Expert repair work using quality parts and proven techniques to restore your AC system to optimal performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Emergency Section -->
+  <section class="emergency">
+    <div class="container">
+      <h2>Need AC Repair Right Now?</h2>
+      <p>Don't let a broken AC system leave you uncomfortable. Contact our expert technicians for fast, reliable same-day repair service.</p>
+      <a href="https://cooling-tx956.github.io/airflowfeed-01/" class="emergency-phone" target="_blank" rel="noopener noreferrer">
+        <i class="fas fa-wrench"></i> Get Emergency Repair
+      </a>
+      <p>Professional AC repair service available when you need it most</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>AC Repair Services</h3>
+          <p>Professional air conditioning repair in Brownsville, TX with same-day service and expert diagnostics.</p>
+          <p><strong>Service Areas:</strong> Brownsville, Harlingen, San Benito, Los Fresnos, Port Isabel, Rio Grande Valley</p>
+        </div>
+        <div class="footer-section">
+          <h3>Repair Services</h3>
+          <ul>
+            <li>Same-Day AC Repair</li>
+            <li>Emergency Service</li>
+            <li>System Diagnostics</li>
+            <li>Compressor Repair</li>
+            <li>Refrigerant Leak Repair</li>
+            <li>Electrical Component Service</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Why Choose Us</h3>
+          <p><strong>Licensed & Insured:</strong><br/>Certified HVAC professionals</p>
+          <p><strong>Same-Day Service:</strong><br/>Fast emergency repairs</p>
+          <p><strong>Guaranteed Work:</strong><br/>Quality repair warranty</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Professional AC Repair Services. Licensed HVAC Contractor serving Brownsville, TX and surrounding areas.</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- JSON-LD SCHEMA -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "same-day-ac-repair-brownsville",
+  "name": "Same-Day AC Repair in Brownsville, TX",
+  "description": "Need fast AC repair in Brownsville? Our technicians offer same-day service, expert diagnostics, and affordable cooling system fixes."
+}
+</script>
 </body>
 </html>
